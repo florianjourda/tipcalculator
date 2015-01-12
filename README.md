@@ -14,13 +14,9 @@ Completed user stories:
  
 Notes:
 
-* I added a currency picker, which has the top currency (euro, yen...) at the top
-** The currency updates correctly both if the bill amount was empty or not:w
-* The default tip is automatically sorted relatively to the other values:
-** if the default tip is 15%, the control will show: 10% | 15% | 20%
-** if the default tip is 25%, the control will show: 10% | 20% | 25%
-* The billAmountTextField shows formatted currency string when not in editing focus (will show '$2.00' when editing)
-** But when is start being, the cents get removed if they are equal to '00' (will show '2' when editing)
+* I added a currency picker, which has the top currency (euro, yen...) at the top. The currency updates correctly both if the bill amount was empty or not
+* The default tip is automatically sorted relatively to the other values: if the default tip is 15% the control will show: 10% | 15% | 20%, if the default tip is 25% the control will show: 10% | 20% | 25%
+* The billAmountTextField shows formatted currency string when not in editing focus (will show '$2.00' when not editing). But when the user starts to edit, the cents get removed if they are equal to '.00' (will show '2' when editing)
 
 * I created one helper (PrefsHelper) to deal with saving user defaults, notably with a tll
 * I created one helper (ColorThemeHelper) to deal the app color theme
